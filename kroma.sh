@@ -90,7 +90,6 @@ function install_kroma_validator() {
 
 # 查看Docker日志功能
 function check_docker_logs() {
-    echo "查看Kroma Docker容器的日志..."
     cd ~/kroma-up
     docker compose -f docker-compose-mainnet.yml logs -f
 }
