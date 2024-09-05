@@ -52,7 +52,7 @@ function install_kroma_validator() {
         # 用户输入L1 RPC端点
         read -p "请输入L1 Beacon RPC端点 (https://...): " l1_beacon_endpoint
         read -p "请输入L1 RPC端点 (https://...): " l1_rpc_endpoint
-        read -p "请输入L1 Validator RPC端点 (https://...): " l1_validator_rpc_endpoint
+        read -p "请输入L1 Validator RPC端点 (wss://...): " l1_validator_rpc_endpoint
         sed -i "s|KROMA_NODE__L1_BEACON_ENDPOINT=|KROMA_NODE__L1_BEACON_ENDPOINT=$l1_beacon_endpoint|" .env
         sed -i "s|KROMA_NODE__L1_RPC_ENDPOINT=|KROMA_NODE__L1_RPC_ENDPOINT=$l1_rpc_endpoint|" .env
         sed -i "s|KROMA_VALIDATOR__L1_RPC_ENDPOINT=|KROMA_VALIDATOR__L1_RPC_ENDPOINT=$l1_validator_rpc_endpoint|" .env
